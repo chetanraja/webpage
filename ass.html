@@ -1,0 +1,320 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 24px 21px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    font: normal normal bold 44px arial;
+    color: #000000;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    color: #000000;
+    text-decoration: none;
+}
+.button:active {
+    background: #999999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#ffffff));
+    background: -moz-linear-gradient(top, #999999, #ffffff);
+    background: linear-gradient(to bottom, #999999, #ffffff);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEyElEQVRIia2Va2xTZRjHf+fSrbRbYTh3010YY0Ecg8UoIETJ5APRDAYqfFliMqIJIpcgiSFZREOMH4xRol8MJCgYYzSBqENuMcIYlxmGLhtzA9Z1967b2q7t2p6257x+OGdQjSEu8UmenJw37/n/n///fc77KMwx6isoWFvI6ifmkyuniI1rxOaK8dC4tC//uBi7Ioy+MyJw6UOt8/PNV7/bntlYaMf+vxBc2F34vZgZFiI8JER4WIioV4jRy6Lv2JbeT2pZ98/98pwZhAAtaGUAZnxgy6F8yweVr7/73q8nXnE0pm9X567BgEQIdAMQJqHJjHPJBvXl3frRYPiwb895mgGUucI3rBDbyueHl0naFGS6QE+BHgM9DqkotgUlUnFWZEPbjd4vh2aIKtW5ZD1XREW3n4BZ3sNj06LkNqevc1mkqwXJfY7MhY+APQdSUUjFITlDdmGpMz9w1fjmlvaL8tlm9jUdbDi94/lHG1+rkVZvLJ5eoM2IaE8Av+nB32NtKetddparKmo8rpFy/4azsAhsDkjFTDUCpITv8WNnh76QTm7lcMPeXU04S028RIDkpJuhwUHP9NhQq7t/9OLxNtF6pg+PpTAXKFuaS+UbT7HjxSXUFpcX4Fi3E3TdKkmgjXexcc/pFWo0QRK/G2Tn/YJtOaWUL1xURo1RVpMKNtS9OsTw6Mi98KS35fadiYtHr9B6aZBb+8/z82CIQ++4vPsc2iBIDvPQdci021icS4l628c9ERxAyi4GYTxwRRZmE8uCjNxCyvMeq0A2KlbUTjdu3e412tu7Lqx7P/TSp9c5tHE56wsM/0rQTAJDgqk2ZAVZvTpMT8Q/QXZewCSQhNlbae1nPoRpkAx2yS9nTIUqzTdCsmteD7K2El0zwf3doA2AAmq3l2GfPxTK1vwuMB6AK2ngzKoxEKN38d0YJzxjdlzTC1Q9syZ/E8Y06EkI3QPNDzKkkhhqzCA4FdQGFwe6q8jKBRRThSxM/PtKdPQ+D972KKMaoa86+OhoA7X1dTnH5+dlOtD6IDaBeQAQ9cFIiEkVSPijuImPVWF4weEEuwMkG8hSWoPqiDxw1KgY4yLYtFp5u3yRrVJRk5C4a9prs0xLwEA/oevDeFSA8QjdqGxCFUAE9AikAFk2U5FAAtUFOTmw6klKEEkQCVNlpln4bMZuQ4ePlnAcnwrQ4eV3AUgq5u2kYlajGlZaa4qVkpVYf4ZhgRuQ6oTREVInOjgCGCrA5X7uxDRwuCwAmykTAWSlrSkWUfodLCwCDZLXwOeGZg9fn/2TFqztdI0x7AsTKivAhQ3ENPjbTVtzykBZDuSnkchpCjQQ/RBphUAcrvho2f8TB60STYKETnAihKfMRrUYg4luGBFEFZAjHuxON2QVQeZSkAsAO4gU6JMQvQPTg5AQ0Ozh1IEf2WsYeGcFzs6D1PQUbr2Lat8E9KfwHjjHTv8M8bfWsmtNEbX5fhxqG6jzQLE6mRREkhi3/PQcu8mR5k6+BUJpBj4YOCMxusaD1P8RpevN0+wYmOImYOw+RWuWnWV1VdSuKuHpXCcFGSpyWCPUO0HPD51c7vVyDfDxsOu+rppnP67npCODCv59lMqmObisdDDHiSgDGXP54L/EX5ztNQw3UOoSAAAAAElFTkSuQmCC") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.collapsible {
+  background-color: skyblue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: skyblue;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+header{background-color: #0EB7ED;
+  padding: 30px;
+font-size: 20px;
+}
+nav{
+background-color:#e6ffff;
+  padding: 10px;
+ font-size:20px;
+
+}
+
+
+div.relative {
+  position: relative;
+  left: 100px;
+ color:white
+  }
+.tab { 
+       display:inline-block; 
+       margin-left: 30px;
+}
+.tab1 { 
+       display:inline-block; 
+       margin-left: 550px;
+ }
+ .tab2 {
+       display:inline-block; 
+       margin-left: 500px;
+ }
+ .dot {
+  height: 15px;
+  width: 15px;
+  background-color:blue;
+  border-radius: 100%;
+  display: inline-block;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color:black;
+  height: 300px; /* only for demonstration, should be removed */
+}
+</style>
+</head>
+<body style="background-color:#e6ffff">
+
+<header><div class="relative">PERSONAL<span class="tab">GOALS &nbsp REPORTS &nbspADMIN</span><span class="tab1">HELP</span>&nbsp &nbsp WILLAM ROBBINSON &nbsp<strong>&#8964;</strong></header>
+<nav>&nbsp <strong>Goal Status</strong><span class="tab1"><span class="tab2"><svg width="200" height="20">
+  <rect width="180" height="20" style="fill:white;" /><svg height="20" width="200">
+  <text x="0" y="15" fill="black">&nbsp&nbsp2017&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#9660;</text>
+  <span class="dot"></nav>
+  <svg width="1425" height="100">
+  <rect width="1425" height="100" style="fill:white;stroke-width:1;stroke:rgb(0,0,0)"" /><svg height="20" width="1425">
+  <text x="0" y="15" fill="black">&nbsp  GOAL STATUS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp GOAL PROGESS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+AFTER PROGRESS</text></svg>
+<svg height="95" width="450">
+  <line x1="450" y1="20" x2="450" y2="95" style="stroke:black;stroke-width:1" ></line></svg>
+  
+  
+  <svg height="95" width="930">
+  <line x1="930" y1="20" x2="930" y2="95" style="stroke:black;stroke-width:1" />
+</svg>
+  
+  <svg height="65" width="60">
+  <text x="25" y="65" font-size="50">2</text>
+</svg>
+ <svg height="65" width="150">
+  <text x="130" y="65" font-size="50">1</text>
+</svg>
+<svg height="65" width="255">
+  <text x="235" y="65" font-size="50">1</text>
+</svg>
+<svg height="65" width="365">
+  <text x="340" y="65" font-size="50">3</text>
+</svg>
+<svg height="65" width="510">
+  <text x="480" y="65" font-size="50">2</text>
+</svg>
+<svg height="65" width="600">
+  <text x="580" y="65" font-size="50">1</text>
+</svg>
+<svg height="65" width="710">
+  <text x="680" y="65" font-size="50">0</text>
+</svg>
+<svg height="65" width="800">
+  <text x="780" y="65" font-size="50">1</text>
+</svg>
+<svg height="65" width="1000">
+  <text x="970" y="65" font-size="50">4</text>
+</svg>
+<svg height="65" width="1100">
+  <text x="1070" y="65" font-size="50">2</text>
+</svg>
+<svg height="65" width="1200">
+  <text x="1170" y="65" font-size="50">6</text>
+</svg>
+<svg height="65" width="1300">
+  <text x="1270" y="65" font-size="50">1</text>
+</svg>
+<svg height="200" width="100">
+<text x="20"y="90" font-size="15" fill="green" >&#8599; Positive</text>
+</svg>
+<svg height="200" width="200">
+<text x="130"y="90" font-size="15" fill="orange" >&#8594; Neutral</text>
+</svg>
+<svg height="200" width="310">
+<text x="240"y="90" font-size="15" fill="red" > &#8595;&nbspNegative</text>
+</svg>
+<svg height="200" width="410">
+<text x="350"y="90" font-size="15" fill="blue" > --&nbspN/A</text>
+</svg>
+<svg height="200" width="610">
+<text x="480"y="90" font-size="15" fill="#b2b299" >&#9729;&nbsp0% </text>
+</svg>
+<svg height="200" width="710">
+<text x="585"y="90" font-size="15" fill="#b2b299" >&#127783;0-50% </text>
+</svg>
+<svg height="200" width="810">
+<text x="685"y="90" font-size="15" fill="#b2b299" > &#127780;50-99%</text>
+</svg>
+
+<svg height="200" width="910">
+<text x="785"y="90" font-size="15" fill="#b2b299" > &#9728;100%</text>
+</svg>
+<svg height="200" width="1100">
+<text x="960"y="90" font-size="15" fill="black" > 0%&nbsp progress</text>
+</svg>
+
+<svg height="200" width="1200">
+<text x="1060"y="90" font-size="15" fill="black" > In progress</text>
+</svg>
+<svg height="200" width="1300">
+<text x="1170"y="90" font-size="15" fill="black" >&#x1F315;Late</text>
+</svg>
+<svg height="200" width="1400">
+<text x="1270"y="90" font-size="15" fill="black" >&#9989;Done</text>
+</svg></nav>
+<article>
+
+<form>
+  <br>
+  <br>
+  &nbspOrganisation&nbsp&nbsp&nbsp&nbsp <span class="tab1"><span class="tab1"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><strong>&#x26F6;<strong></span></span></span></span></span></span>
+  <br><br>&nbsp&nbsp&nbsp&nbsp<select>
+  <option value="org">Organisation&nbsp&nbsp&nbsp&nbsp</option>
+  
+</select>
+<span class="tab1"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><a href>Clear filters</a></span></span></span></span></span></span></span></span></span></span></span>&nbsp&nbsp&nbsp&nbsp<a href>See more...</a>
+</form>
+<P>&nbsp&nbsp&nbsp&nbsp>>Organisation,Goal<span class="tab1">progress</span><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab">&nbsp&nbspstatus</span></span></span></span></span></span>
+<span class="tab">actions</span><span class="tab"><span class="tab"><span class="tab">&#128113;</span></span></span><span class="tab"></span>&nbsp&nbsp&#x1F4AC;</p>
+</article>
+<button type="button" class="collapsible">>&nbspELIGA PVT LTD.</button>
+<div class="content">
+  <table>
+ <col width="680">
+  <col width="150">
+  <tr>
+    <td><span style='font-size:22px;'>&#x2606; &#10112;&nbsp&nbsp</span>Increase the sales on products,which are from long back</td>
+    <td width="23%"><span class="tab">&#10005 &nbsp OFF</span><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab">&#8599;</span></span></span></span></td>
+    <td width="10%">16%<span class="tab">&nbsp&nbsp0/1!!!</td>
+	<td width="5%">DM</td>
+	<td>&#x1F4AC;</td>
+  </tr>
+  
+  <tr>
+    <td><span style='font-size:22px;'>&#x2606; &#10113;&nbsp&nbsp</span>Fasttrack watches need to be added more </td>
+    <td>1k------2k------5k<span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab">&#8594;</span></span></span></span></span></td>
+    <td></td>
+	<td>2</td>
+	<td>&#x1F4AC;</td>
+  </tr>
+  <tr>
+    <td><span style='font-size:22px;'>&#x2606; &#10114;&nbsp&nbsp</span>Goal&nbsp1</td>
+    <td><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab">--</span></span></span></span></span></td>
+    <td></td>
+	<td>0</td>
+	<td>&#x1F4AC;</td>
+  </tr>
+  <tr>
+    <td><span style='font-size:22px;'>&#x2606; &#10115;&nbsp&nbsp</span>Goal&nbsp2</td>
+    <td><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab">--</td>
+    <td></td>
+	<td>0</td>
+	<td>&#x1F4AC;&nbsp2</td>
+  </tr>
+  <tr>
+    <td><span style='font-size:22px;'>&#x2606; &#10116;&nbsp&nbsp</span>Innovation in products packing</td>
+    <td><span class="tab">&#9728;Ready</td>
+    <td>22,7%<span class="tab">&nbsp&nbsp1/6!!!</td>
+	<td>3</td>
+	<td>&#x1F4AC;</td>
+  </tr>
+  
+</table>
+</div>
+<button type="button" class="collapsible">>&nbspELIGA HYDERABAD</button>
+<div class="content">
+  <table>
+ <col width="680">
+  <col width="150">
+  <tr>
+    <td><span style='font-size:22px;'>&#x2606; &#10117;&nbsp&nbsp</span>something</td>
+    <td width="23%"><span class="tab">&#10005 &nbsp OFF</span><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab">&#8594;</span></span></span></span></td>
+    <td width="10%"></td>
+	<td width="5%">0</td>
+	<td>&#x1F4AC;</td>
+  </tr>
+  
+  <tr>
+    <td><span style='font-size:22px;'>&#x2606; &#10118;&nbsp&nbsp</span>Increase sales on products with seasonal offers </td>
+    <td>10k------------30k<span class="tab"><span class="tab"><span class="tab"><span class="tab"><span class="tab">&#8599;</span></span></span></span></span></td>
+    <td></td>
+	<td>0</td>
+	<td>&#x1F4AC;</td>
+  </tr>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
